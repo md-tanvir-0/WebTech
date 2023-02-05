@@ -1,0 +1,98 @@
+<html>
+<head>
+	<title>Tanvir webtech</title>
+	<style type="text/css">
+		body{
+			background-color: lightgray;
+		}
+		label{
+			font-family:'Georgia' ;
+			font-size: 100%;
+			font-weight:bold ;
+			margin-left:100px ;
+			width: 200px;
+			display: inline-block;
+			text-align: right;
+
+
+		}
+		h1{
+			margin-left:300px;
+			font-size: 200%;
+		}
+		input{
+			 border-radius: 4px;
+		}
+		select{
+			 border-radius: 4px;
+		}
+	.tk{
+    background-color: lightgray;
+}
+
+.tk:focus {     
+    background-color:skyblue;    
+}
+
+
+		
+		
+	</style>
+</head>
+	<body>
+		<form>
+			<h1 style="color:#ad1616;">Donor Info</h1><br>
+			<label for="fname"> First Name:</label>
+			<input type="text" placeholder="Enter your First Name" name"fname"
+           onfocus="this.placeholder=''" 
+           onblur="this.placeholder='Enter your First Name'"><br><br>
+			<label for="lname"> Last Name:</label>
+			<input type="text" placeholder="Enter your Lirst Name" name"lname"
+           onfocus="this.placeholder=''" 
+           onblur="this.placeholder='Enter your Lirst Name'"><br><br>
+			<label for="cname"> Companies:</label>
+			<input type="text" name"cname"><br><br>
+			<label for="a1name"> Adress 1:</label>
+			<input type="text" name"a1name"><br><br>
+			<label for="a2name"> Adress 2:</label>
+			<input type="text" name"a2name"><br><br>
+			<label for="c1name"> City:</label>
+			<input type="text" name"c1name"><br><br>
+			<label> State:</label>
+			<select name="state">
+				<option value="" disabled selected hidden> Select</option>
+				<option value="Dhaka">Dhaka</option>
+				<option value="Chattagram">Chattagram</option>
+				<option value="Barisal">Barisal</option>
+				<option value="Shylet">Shylet</option>
+			</select><br><br>
+			<label for="Zname"> Zipcode:</label>
+			<input type="text" name"Zname"><br><br>
+			<label> Country:</label>
+			<select name="country">
+				<option value="" disabled selected hidden> Select</option>
+				<option>Bangladesh</option>
+				<option>Nepal</option>
+				<option>India</option>
+				<option>Bhutan</option>
+			</select><br><br>
+			<label for="Pname"> Phone:</label>
+			<input type="number" name"Pname"><br><br>
+			<label for="Ename"> Email:</label>
+			<input type="email" name"Ename"><br><br>
+			<div>
+			<label class="C">Donation Amount:</label>
+				<input type="Radio"Name="Num">None
+				<input type="Radio"Name="Num">50
+				<input type="Radio"Name="Num">75
+				<input type="Radio"Name="Num">100
+				<input type="Radio"Name="Num">250
+				<input type="Radio"Name="Num">others <br> <br>
+				<label >Recurring Donation</label>
+					<input type="Checkbox"> I am interested in giving on regular basis
+			</div><br>
+			<label> If you completed please: </label>
+			<input class="tk" type="Submit" style="background-color:#1b77d3; color: white;">
+			</form>
+		</body>
+		</html>
